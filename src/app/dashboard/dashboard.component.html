@@ -1,1 +1,36 @@
-<p>dashboard works!</p>
+<app-header></app-header>
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened">
+  <div class="text">
+  <p class="line">DASHBOARD</p>
+  <p class="line">PATCH MANAGEMENT</p>
+
+  <p  class="line" routerLink="/managedfiles">&#8674; Managed Files</p>
+  <p  class="line" routerLink="/runcommands">&#8674; Run Commands</p>
+  <p  class="line" routerLink="/remotemanagement">&#8674; Remote Management</p>
+  <p  class="line" routerLink="/crontabeditor">&#8674; Crontab Editor</p>
+  <p  class="line" routerLink="/jobs">&#8674; Jobs</p>
+
+  <p class="line">SETTINGS</p>
+  <P class="line" routerLink="/settings">&#8674; Settings</P>
+  </div>
+
+  <button (click)="toggleSidebar()">Close Sidebar</button>
+  </ng-sidebar>
+
+  <div ng-sidebar-content>
+    <button (click)="toggleSidebar()">
+      Open Sidebar
+    </button>
+    <mat-grid-list cols="4" rowHeight="1:1">
+      <mat-grid-tile style="background-color:rgb(19, 179, 19);"></mat-grid-tile>
+      <mat-grid-tile style="background-color:skyblue;"></mat-grid-tile>
+      <mat-grid-tile style="background-color:yellow;"></mat-grid-tile>
+      <mat-grid-tile style="background-color:rgb(224, 88, 111);"></mat-grid-tile>
+    </mat-grid-list>
+    <mat-card class="card">
+
+    </mat-card>
+  </div>
+</ng-sidebar-container>
+<app-footer></app-footer>

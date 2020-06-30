@@ -11,13 +11,33 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {SidebarModule} from 'ng-sidebar';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ManagedFilesComponent } from './managed-files/managed-files.component';
+import { RunCommandsComponent } from './run-commands/run-commands.component';
+import { RemoteManagementComponent } from './remote-management/remote-management.component';
+import { CrontabEditorComponent } from './crontab-editor/crontab-editor.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { SettingsComponent } from './settings/settings.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ManagedFilesComponent,
+    RunCommandsComponent,
+    RemoteManagementComponent,
+    CrontabEditorComponent,
+    JobsComponent,
+    SettingsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +48,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatGridListModule,
+    SidebarModule.forRoot()
 
 
   ],

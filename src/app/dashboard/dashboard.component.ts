@@ -11,5 +11,10 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  opened = false;
+  toggleSidebar()
+  {
+    this.opened= !this.opened;
+  }
 
 }

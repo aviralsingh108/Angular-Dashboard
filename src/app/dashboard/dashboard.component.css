@@ -1,0 +1,30 @@
+ng-sdiebar-container {
+
+  height: 100vh;
+
+}
+::ng-deep .ng-sidebar{
+  background-color: #313031;
+  width: 200px;
+  padding: 2em 3em;
+  box-shadow: 0 0 2.5em rgba(163, 163, 163, 0.5);
+}
+.text
+{
+  color:white;
+  margin-top: 06px;
+  display: block;
+  font-size:15px;
+
+}
+.line
+{
+  line-height: 2.4;
+}
+.card
+{
+  height: 18em;
+  background-color: rgb(233, 245, 233);
+}
+
+

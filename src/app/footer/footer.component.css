@@ -1,0 +1,19 @@
+.foot
+{
+color:rgb(35, 167, 219);
+font-size: medium;
+margin-left: 19em;
+margin-top: 20px;
+font-weight: 500;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  background-size: 10px;
+  height: 60px;
+
+}
